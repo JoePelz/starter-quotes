@@ -1,3 +1,8 @@
+* Team members: SREPOLLOCK, CAMRONSTEN, JOEPOLYGON
+
+* Conventions
+ * Allman style braces, for consistency sake
+
 #######################
 Starter Webapp - Quotes
 #######################
