@@ -42,15 +42,14 @@ $route['default_controller'] = "welcome";
 $route['404_override'] = '';
 $route['show/(:num)'] = 'first/gimme/$1';
 $route['dunno'] = function() {
-    $source = "data/Portrait_Of_A_Baboon.jpg";
-    if (!file_exists($source)) { show_404($source); }
-    $this->load->helper('file');
-    $mimeType = get_mime_by_extension($source);
-    header("Content-type: " . $mimeType);
+    $source = 'data/portrait_of_a_baboon.jpg'; // an image you provide
+    // set the mime type for that image
+    header("Content-type: image/jpeg"); 
     header('Content-Disposition: inline');
-    readfile($source);
-    die();
+    readfile($source); // dish it
+    die(); // and we don't have to go any further
 };
-
+$route['([a-zA-Z]{4,4}+[0-9]{4,4})/(:any)'] = 'bingo';
+        
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */

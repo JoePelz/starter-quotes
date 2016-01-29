@@ -3,6 +3,7 @@ Include changes in each pull request.
 Format: [YYYY-MM-DD] [24H:MIN] what changed
 
 2016-01-29 14:46 Forked into camsten and cloned to desktop
+=======
 2016-01-28 15:54 test commit
 2016-01-28 15:53 Forked into srepollock and cloned to desktop
 2016-01-28 15:48 changelog created
