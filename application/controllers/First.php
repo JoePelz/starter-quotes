@@ -23,4 +23,19 @@ class First extends Application {
 
 		$this->render();
     }
+    
+    /**
+     * Returns a page displaying a single quotation.
+     * @param integer $which The number of the quote to return.
+     */
+    function gimme($which)
+    {
+        $this->data['pagebody'] = 'justone';	// this is the view we want shown
+        // pull out the specific quote requested
+        $record = $this->quotes->get($which);
+
+        $this->data = array_merge($this->data, $record);
+
+        $this->render();
+    }
 }
