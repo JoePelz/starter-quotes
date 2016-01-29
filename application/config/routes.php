@@ -49,7 +49,7 @@ $route['dunno'] = function() {
     readfile($source); // dish it
     die(); // and we don't have to go any further
 };
-$route['([a-zA-Z][0-9]{4,4})/(:any)'] = 'bingo';
+$route['([a-zA-Z]{4,4}+[0-9]{4,4})/(:any)'] = 'bingo';
         
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */
