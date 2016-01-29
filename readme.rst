@@ -3,6 +3,11 @@
 * Conventions
  * Allman style braces, for consistency sake
 
+###work division:
+* JP 1 5
+* SP 2 6 8
+* CS 3 4 7
+
 #######################
 Starter Webapp - Quotes
 #######################
