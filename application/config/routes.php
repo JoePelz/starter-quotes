@@ -41,7 +41,16 @@
 $route['default_controller'] = "welcome";
 $route['404_override'] = '';
 $route['show/(:num)'] = 'first/gimme/$1';
-
+$route['dunno'] = function() {
+    $source = "data/Portrait_Of_A_Baboon.jpg";
+    if (!file_exists($source)) { show_404($source); }
+    $this->load->helper('file');
+    $mimeType = get_mime_by_extension($source);
+    header("Content-type: " . $mimeType);
+    header('Content-Disposition: inline');
+    readfile($source);
+    die();
+};
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */
