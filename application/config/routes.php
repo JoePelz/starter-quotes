@@ -40,6 +40,8 @@
 
 $route['default_controller'] = "welcome";
 $route['404_override'] = '';
+$route['first'] = 'first';
+$route['last'] = 'last';
 $route['show/(:num)'] = 'first/gimme/$1';
 $route['lock/:any/:any'] = 'welcome/shucks';
 $route['[a-zA-Z]{4}/bingo'] = 'bingo/index';
@@ -52,6 +54,7 @@ $route['dunno'] = function() {
     die(); // and we don't have to go any further
 };
 $route['([a-zA-Z]{4,4}+[0-9]{4,4})/(:any)'] = 'wise/bingo';
+$route['(:any)'] = 'first/zzz';
         
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */
