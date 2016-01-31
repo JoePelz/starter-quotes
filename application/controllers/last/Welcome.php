@@ -6,7 +6,7 @@
  * and open the template in the editor.
  */
 
-class Last extends Application {
+class Welcome extends Application {
     
     function __construct()
     {
@@ -18,9 +18,7 @@ class Last extends Application {
                 $this->data['pagebody'] = 'justone';	// this is the view we want shown
 		// build the list of authors, to pass on to our view
 		$record = $this->quotes->last();
-                
 		$this->data = array_merge($this->data, $record);
-
 		$this->render();
     }
 }

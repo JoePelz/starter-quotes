@@ -2,7 +2,12 @@ Convention: newest items at the top.
 Include changes in each pull request.
 Format: [YYYY-MM-DD] [24H:MIN] what changed
 
+-2016-01-31 10:23 Moved question 2 into 'last' folder as per directions 
+                  and removed extra routing rules
 -2016-01-31 09:32 Fixed up question 1,2,3 and change log
+-2016-01-31 00:30 removed 'dunno.php' controller
+                  clarified routing for 7 and 8
+                  matched case on the anonymous image
 -2016-01-30 17:15 Question 7 done
 -2016-01-30 15:45 Question 4 done
 -2016-01-30 13:45 Question 3 done
