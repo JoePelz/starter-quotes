@@ -4,6 +4,8 @@ Format: [YYYY-MM-DD] [24H:MIN] what changed
 
 2016-01-29 14:46 Forked into camsten and cloned to desktop
 
+-2016-01-31 17:15 Question 7 done
+-2016-01-31 15:45 Question 4 done
 -2016-01-31 13:45 Question 3 done
 -2016-01-29 14:01 Question 8 done
 -2016-01-29 13:35 Question 6 done
