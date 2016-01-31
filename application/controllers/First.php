@@ -40,10 +40,10 @@ class First extends Application {
     }
     
     function zzz()
-        {
-            $this->data['pagebody'] = 'justone';
-            $record = $this->quotes->get('1');
-            $this->data = array_merge($this->data, $record);
-            $this->render();
-        }
+    {
+        $this->data['pagebody'] = 'justone';
+        $record = $this->quotes->get('1');
+        $this->data = array_merge($this->data, $record);
+        $this->render();
+    }
 }

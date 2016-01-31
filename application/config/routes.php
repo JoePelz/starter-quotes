@@ -45,7 +45,8 @@ $route['last'] = 'last';
 $route['show/(:num)'] = 'first/gimme/$1';
 $route['lock/:any/:any'] = 'welcome/shucks';
 $route['[a-zA-Z]{4}/bingo'] = 'bingo/index';
-$route['dunno'] = function() {
+$route['dunno'] = function() 
+{
     $source = 'data/Portrait_Of_A_Baboon.jpg'; // an image you provide
     // set the mime type for that image
     header("Content-type: image/jpeg"); 
