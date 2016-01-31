@@ -41,7 +41,6 @@
 $route['default_controller'] = "welcome";
 $route['404_override'] = '';
 $route['show/(:num)'] = 'first/gimme/$1';
-$route['lock/em/up'] = 'welcome/shucks';
 $route['dunno'] = function() {
     $source = 'data/portrait_of_a_baboon.jpg'; // an image you provide
     // set the mime type for that image
